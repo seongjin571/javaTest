@@ -1,21 +1,26 @@
-import java.util.Random;
-public class test1 {
-    public static void main(String[] args) {
-//        for (int j = 1; j < 10; j++) {
-//            for (int i = 1; i < 10; i++) {
-//                System.out.printf(j+"X"+i+"="+i*j+" ");
-//                if(i==9)
-//                    System.out.println();
-//            }
-//        }
-        int[] a = new int[]{1,2,3,4};
-        a[0]=3;
-        a[1]=5;
-        a[3]=13;
-        a[2]=122;
-        for(int i=0; i<4; i++){
-            System.out.println(a[i]+" ");
-        }
 
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class test1 {
+    public static void main(String []args){
+        System.out.printf("로또 번호를 출력할 횟수를 입력하세요.");
+        Scanner count=new Scanner(System.in);
+        int count_int=count.nextInt();
+        System.out.println(count_int);
+        for(int i=0; i<count_int; i++) {
+//            System.out.println(i+"번째="+making());
+        }
+    }
+//    static String making(){
+//        int[] six_number= new int[6];
+//        for(int arr=0; arr<6; arr++) {
+//            six_number[arr] = (int) (Math.random() * 45) + 1;
+//        }
+//        if(check(six_number))
+//        return Arrays.toString(six_number);
+//    }
 }
-}
+
+
+
