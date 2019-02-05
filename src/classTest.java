@@ -1,21 +1,21 @@
 import java.util.Scanner;
 class Tv{
-    int channel=17;
+    int channel=20;
     boolean power=false;
-    int volume=10;
+    int volume=20;
     void power(){
         power=!power;
     }
     void channelUp(){
         volume++;
-        System.out.println("채널은: "+volume);
+        System.out.println("현재 온도: "+volume);
     }
     void channelDown(){
         volume--;
-        System.out.println("채널은: "+volume);
+        System.out.println("현재 온도: "+volume);
     }
     void powerControl(){
-        System.out.println("전원 버튼-3");
+        System.out.println("전원 on-3");
         Scanner count = new Scanner(System.in);
         int count_int = count.nextInt();
         if(count_int==3){
@@ -29,17 +29,17 @@ public class classTest {
 
         Tv remote = new Tv();
         remote.powerControl();
-        while(remote.power) {
-            System.out.println("채널 Up-1//채널 Down-2//전원 버튼-3");
-            Scanner channel = new Scanner(System.in);
-            int channel_int = channel.nextInt();
-            if(channel_int==1){
+            while(remote.power) {
+            System.out.println("온도 Up-1//온도 Down-2//전원 off-3");
+            Scanner controller = new Scanner(System.in);
+            int controller_number  = controller.nextInt();
+            if(controller_number ==1){
                 remote.channelUp();
             }
-            else if(channel_int==2){
+            else if(controller_number ==2){
                 remote.channelDown();
             }
-            else if(channel_int==3){
+            else if(controller_number ==3){
                 remote.power();
                 System.out.println("전원이 종료 되었습니다.");
                 remote.powerControl();
