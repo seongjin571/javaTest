@@ -11,7 +11,7 @@ public class test2 {
             for(int i=1; i<=play_count; i++){
                 System.out.println(i+"번째: "+making_lottonumber());
             }
-        }
+}
 
         static String making_lottonumber(){
             int []arr=new int[6];
@@ -31,7 +31,7 @@ public class test2 {
     }
 
     static boolean checking_overlap(int []arr){
-        int[]check_arr=new int[45];
+        int[]check_arr=new int[46];
         for(int i=0; i<6; i++){
             check_arr[arr[i]]+=1;
             if(check_arr[arr[i]]==2){
