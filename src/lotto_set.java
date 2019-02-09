@@ -1,7 +1,4 @@
-//import java.util.ArrayList;
-//import java.util.Collections;
 import java.util.HashSet;
-//import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -18,15 +15,11 @@ public class lotto_set {
     }
 
     static String making_lottonumber(){
-        Set<Integer>set = new HashSet<Integer>();
+        Set set = new HashSet();
 
         while(set.size() != 6){
             set.add((int)(Math.random() * 45 + 1));
         }
-
-        // 정렬
-//        List<Integer> list = new ArrayList<Integer>(set);
-//        Collections.sort(list);
 
         return set.toString();
     }

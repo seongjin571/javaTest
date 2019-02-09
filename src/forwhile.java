@@ -16,7 +16,7 @@ public class forwhile {
 //                    System.out.print("*");
 //                System.out.println();
 //            }
-        }
+    }
     }
 
 

@@ -1,15 +1,9 @@
 import java.util.Scanner;
-//import java.util.HashSet;
-//import java.util.Set;
 import java.util.List;
 import java.util.HashMap;
 import java.util.ArrayList;
 class function_deposit {
-    //    int i=0;
-//        String[] all_deposit=new String[3];
     List list = new ArrayList();
-//    HashMap<Integer, String> map = new HashMap<Integer, String>();
-
     HashMap map = new HashMap();
 
     void new_deposit() {
@@ -37,8 +31,7 @@ class function_deposit {
         HashMap getMap = new HashMap();
         System.out.println("-------");
         System.out.println("계좌목록");
-        System.out.println("-------");
-//
+
         for (int i = 0; i < list.size(); i++) {
             getMap = (HashMap) list.get(i);
             System.out.print(getMap.get(1) + "     ");
@@ -46,7 +39,6 @@ class function_deposit {
             System.out.print(getMap.get(3) + "     ");
             System.out.println("");
         }
-//        }
     }
 
     void input_deposit() {
@@ -62,7 +54,6 @@ class function_deposit {
         int deposit_money = new_deposit_data.nextInt();
         getMap = (HashMap) list.get(0);
         for (int i = 0; i < list.size(); i++) {
-
             getMap = (HashMap) list.get(i);
             if(getMap.get(1).equals(deposit_number)) {
                 int n = ((Integer) getMap.get(3)).intValue();
@@ -90,9 +81,7 @@ class function_deposit {
         String deposit_number = new_deposit_data.nextLine();
         System.out.printf("출금액: ");
         int deposit_money = new_deposit_data.nextInt();
-        getMap = (HashMap) list.get(0);
         for (int i = 0; i < list.size(); i++) {
-
             getMap = (HashMap) list.get(i);
             if(getMap.get(1).equals(deposit_number)) {
                 int n = ((Integer) getMap.get(3)).intValue();
@@ -120,7 +109,6 @@ public class deposit {
             int choice_number = choice.nextInt();
             if(choice_number==1) {
                 control.new_deposit();
-
             }
             else if(choice_number==2) {
                 control.list_deposit();
