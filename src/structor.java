@@ -21,7 +21,6 @@ class car{
             System.out.printf(a[i]+" ");
         }
         System.out.println();
-
     }
 }
 public class structor {
