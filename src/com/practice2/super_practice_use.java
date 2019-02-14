@@ -9,7 +9,6 @@ public class super_practice_use {
         super_practice_ab practice =new super_practice_ab(car_type);
         System.out.println("차 규격은 = "+practice.size(30)+"입니다.");
         System.out.println("가격은 = "+practice.cost+"만원입니다.");
-
         System.out.println();
 
         System.out.println("원하시는 차를 선택해주세요.");
