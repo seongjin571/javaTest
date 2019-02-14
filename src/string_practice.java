@@ -6,7 +6,7 @@ public class string_practice {
         String a = sc.nextLine();
 
 
-        for(int i=0;i<a.length();i++) {
+        for(int i=0;i<a.length()-1;i++) {
             int count=1;
             for(int j=i;j<a.length()-1;j++) {
                 if(a.charAt(j)==a.charAt(j+1))
